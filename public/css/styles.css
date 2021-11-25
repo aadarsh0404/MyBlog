@@ -1,0 +1,40 @@
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar{
+    padding: 1% 10%;
+}
+
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.container-fluid{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+footer{
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 0%;
+    position:absolute;
+	text-align: center;
+	bottom:0px;
+	width: 100%;
+}
+
+.btn-info{
+    color: white;
+}
+
+.button{
+    display: inline-block;
+    margin-right: 1%;
+    padding-bottom: 1%;
+}

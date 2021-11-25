@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+  <% for(var items of posts){ %>
+    <h1><%= items.title %></h1>
+    <% if(items.blog.length>100) {%>
+      <p><%= items.blog.substring(0,100)+"... "%>
+        <a href="/posts/<%=items.title%>">Read More</a>
+      </p>
+    <%} else {%>
+      <p><%= items.blog %></p>
+    <% } %>
+    <form class="button" action="/<%=items.title%>/delete" method="post">
+      <button class='btn btn-sm btn-outline-danger'>Delete</button>
+    </form>
+    <form class="button" action="/<%=items.title%>/edit" method="get">
+      <button class='btn btn-sm btn-outline-info'>Edit</button>
+    </form>
+  <% } %>
+<%- include('partials/footer') -%>
